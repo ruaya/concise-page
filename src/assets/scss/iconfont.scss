@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 1726315 */
+  src: url('//at.alicdn.com/t/font_1726315_xdbrwc2a2ak.eot');
+  src: url('//at.alicdn.com/t/font_1726315_xdbrwc2a2ak.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1726315_xdbrwc2a2ak.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1726315_xdbrwc2a2ak.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1726315_xdbrwc2a2ak.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1726315_xdbrwc2a2ak.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 14px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Bing:before {
+  content: "\eddb";
+}
+
+.icon-fixed:before {
+  content: "\e690";
+}
+
+.icon-setting:before {
+  content: "\e63f";
+}
+
+.icon-user:before {
+  content: "\e643";
+}
+
+.icon-baidu:before {
+  content: "\e66b";
+}
+
+.icon-delete:before {
+  content: "\e604";
+}
+
+.icon-google:before {
+  content: "\e8f0";
+}
+

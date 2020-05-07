@@ -1,0 +1,57 @@
+@mixin theme(
+  $theme-white,
+  $theme-dark,
+  $theme-green,
+  $theme-blue,
+  $theme-text,
+  $border-color
+) {
+  --theme-white: #{$theme-white};
+  --theme-dark: #{$theme-dark};
+  --theme-green: #{$theme-green};
+  --theme-blue: #{$theme-blue};
+
+  @if $theme-white != #fff {
+    --bg-alpha-6: rgba(30, 30, 30, 0.6);
+    --bg-alpha-5: rgba(30, 30, 30, 0.5);
+    --bg-alpha-2: rgba(30, 30, 30, 0.2);
+    --bg-alpha-1: rgba(30, 30, 30, 0.1)
+  } @else {
+    --bg-alpha-6: rgba(255, 255, 255, 0.6);
+    --bg-alpha-5: rgba(255, 255, 255, 0.5);
+    --bg-alpha-2: rgba(255, 255, 255, 0.2);
+    --bg-alpha-1: rgba(255, 255, 255, 0.1);
+  }
+
+  --border-color: #{$border-color};
+
+  --text: #{$theme-text};
+  --text-light-4: #{lighten($theme-text, 40%)};
+  --text-light-3: #{lighten($theme-text, 30%)};
+  --text-light-1: #{lighten($theme-text, 10%)};
+  --text-dark-1: #{darken($theme-text, 10%)};
+}
+
+body {
+  &#light {
+    @include theme(
+      $theme-white: #fff, 
+      $theme-dark: #000, 
+      $theme-green: #73B769,
+      $theme-blue: #75BFD7,
+      $theme-text: #000, 
+      $border-color: #eee
+    )
+  }
+
+  &#dark {
+    @include theme(
+      $theme-white: #1e1e1e, 
+      $theme-dark: #fff, 
+      $theme-green: #73B769,
+      $theme-blue: #75BFD7,
+      $theme-text: #fff, 
+      $border-color: #696969
+    )
+  }
+}
